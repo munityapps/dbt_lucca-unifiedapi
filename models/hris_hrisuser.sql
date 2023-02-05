@@ -25,7 +25,7 @@ SELECT
     NULL as phone_number,
     "{{ var("table_prefix") }}_users_culture".name as language,
     "{{ var("table_prefix") }}_users_legalentity".name as legal_entity_name,
-    "{{ var("table_prefix") }}_users_manager".email as manager_email,
+    "{{ var("table_prefix") }}_users_manager".mail as manager_email,
     "{{ var("table_prefix") }}_users".jobtitle as job_title,
     NULL as team,
     NULL as country,
