@@ -1,7 +1,7 @@
 {{ config(
     materialized='incremental',
-    unique_key='external_id',
-    incremental_strategy='delete+insert',
+    unique_key='id',
+    incremental_strategy='merge',
 ) }}
 
 SELECT 
