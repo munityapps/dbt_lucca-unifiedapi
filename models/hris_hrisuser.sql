@@ -54,4 +54,3 @@ LEFT JOIN "{{ var("table_prefix") }}_work_contracts_type"
     ON "{{ var("table_prefix") }}_work_contracts_type"."_airbyte_{{ var("table_prefix") }}_work_contracts_hashid" = "{{ var("table_prefix") }}_work_contracts"."_airbyte_{{ var("table_prefix") }}_work_contracts_hashid"
 LEFT JOIN "{{ var("table_prefix") }}_work_contracts_spc"
     ON "{{ var("table_prefix") }}_work_contracts_spc"."_airbyte_{{ var("table_prefix") }}_work_contracts_hashid" = "{{ var("table_prefix") }}_work_contracts"."_airbyte_{{ var("table_prefix") }}_work_contracts_hashid"
-WHERE "{{ var("table_prefix") }}_work_contracts"."isapplicable" = true
